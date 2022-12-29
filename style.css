@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  user-select: none;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: #100c16;
+}
+
+/* start header styling */
+
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 200px;
+}
+
+.navLogoPart {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.navLogoPart h1 {
+  color: #fff;
+  letter-spacing: 0.75%;
+}
+
+.navLogoPart h1 span {
+  font-weight: 400;
+}
+
+.navLogoIconsContainer {
+  position: relative;
+  width: 35px;
+  height: 37px;
+}
+
+.navLogoCover {
+  position: absolute;
+}
+
+.navLogoCircle {
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  top: 5px;
+  left: 5px;
+}
+
+.navLogoInner {
+  position: absolute;
+  mix-blend-mode: color-dodge;
+  top: 2px;
+  left: 12px;
+}
+
+.navButton button {
+  width: 175px;
+  height: 42px;
+  border-radius: 131px;
+  border: 1px solid #8276ff;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* end header styling */
+
+/* start main styling */
+
+main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.leftBanner {
+  max-width: 45%;
+  padding: 40px 200px;
+}
+
+.rightBanner {
+  padding: 55px 270px;
+  position: relative;
+}
+
+.rightBanner::after {
+  content: "";
+  width: 100%;
+  height: 200%;
+  background-image: url("./assets/outline.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -160px;
+  left: 120px;
+}
+
+.rightBanner img {
+  width: 100%;
+}
+
+.leftBannerButton {
+  width: 211px;
+  height: 54px;
+  background: #8276ff;
+  border-radius: 31.0938px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-top: 41px;
+  cursor: pointer;
+}
+
+.leftBannerTitle {
+  width: 787px;
+  height: 138px;
+  font-size: 49px;
+  line-height: 69px;
+  color: #ffc759;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.leftBannerMsg {
+  width: 247px;
+  height: 49px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 20px;
+}
+
+.titleSpan {
+  color: #fff;
+  font-style: normal;
+}
+
+.leftBannerInfo {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.leftBannerInfo span {
+  letter-spacing: 0.005em;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+
+.leftBannerInfo img {
+  width: 35px;
+}
+
+.leftBannerRating {
+  width: 420px;
+  display: flex;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.leftBannerRating img {
+  width: 45px;
+}
+
+.leftBannerRating span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.005em;
+  color: #ffffff;
+  margin-left: 8px;
+}
+
+.advertisement {
+  width: 420px;
+  display: flex;
+  gap: 27px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.advertisement img {
+  width: 100px;
+}
+/* end main styling */
+
+/* start payment styling */
+
+.paymentContainer {
+  margin: 60px 200px;
+}
+
+.paymentContainer h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 52px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.paymentSystems {
+  display: flex;
+  gap: 200px;
+  margin-top: 110px;
+}
+
+.monthly,
+.yearly {
+  width: 537px;
+  height: 586px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(141, 159, 244, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.monthly::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/salesMonth.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: -340px;
+}
+
+.monthly::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/neon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -90px;
+  right: -280px;
+}
+
+.yearly::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/salesYearly.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  right: -340px;
+}
+
+.yearly::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/neon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -90px;
+  right: -280px;
+}
+
+.paymentSystems .monthlyContent {
+  position: absolute;
+  bottom: 28px;
+  right: 23px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+}
+
+.monthly h4,
+.yearly h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 39px;
+  letter-spacing: 0.007em;
+  color: rgba(255, 255, 255, 0.86);
+  background-color: transparent;
+  margin-top: 53px;
+}
+
+.monthly p,
+.yearly p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  letter-spacing: 0.007em;
+  line-height: 157px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.monthly span,
+.yearly span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  margin-top: -18px;
+  letter-spacing: 0.007em;
+  color: rgba(255, 255, 255, 0.75);
+  background-color: transparent;
+}
+
+.paymentInfo {
+  margin-top: 15px;
+  width: 138.56px;
+  background-color: transparent;
+}
+
+.paymentInfo img {
+  background-color: transparent;
+}
+
+.paymentInfo div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background-color: transparent;
+}
+
+.paymentSystems button {
+  width: 223px;
+  height: 54px;
+  margin-top: 50px;
+  background: #8276ff;
+  border: none;
+  cursor: pointer;
+  border-radius: 31.0938px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.paymentInfo p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.salesPrice {
+  position: absolute;
+  top: 140px;
+  left: 50px;
+  background-color: transparent;
+}
+
+.salesPriceInfo {
+  position: relative;
+  background-color: transparent;
+}
+
+.salesPriceInfo img {
+  position: absolute;
+  top: 8px;
+  background-color: transparent;
+}
+
+/* end payment styling */
+
+/* start features styling */
+
+.featuresContainer {
+  margin: 60px 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featuresHeading {
+  width: 403px;
+  height: 104px;
+  text-align: center;
+}
+
+.featuresHeading h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 52px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+}
+
+.featuresHeading span {
+  color: #ffc759;
+}
+
+.featuresContent {
+  height: 813px;
+  width: 1200px;
+  margin-top: 80px;
+  background: linear-gradient(
+    147.19deg,
+    #362a87 -2.99%,
+    #2c2747 82.25%,
+    #4323f1 157.46%
+  );
+  border-radius: 26px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+.featuresInfo {
+  display: flex;
+  gap: 100px;
+  position: relative;
+}
+
+.featuresInfo::before {
+  content: "";
+  position: absolute;
+  border-top: 1.5px solid #e7e9f2;
+  width: 100%;
+  top: 160px;
+}
+
+.featuresInfo::after {
+  content: "";
+  position: absolute;
+  border-top: 6px solid #e7e9f2;
+  border-radius: 6px;
+  width: 11%;
+  top: 157px;
+}
+
+.featuresInfo .featuresInfoInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.featuresInfo .featuresInfoInner p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 25px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+}
+.featuresDetails {
+  margin-top: 150px;
+  display: flex;
+}
+
+.featuresDetailsLeft {
+  width: 660px;
+}
+
+.featuresDetailsLeft h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 39px;
+  line-height: 52px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+}
+
+.featuresDetailsLeftInfo {
+  margin-top: 30px;
+}
+
+.featuresDetailsLeftInfo div {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  margin: 16px;
+}
+
+.featuresDetailsLeftInfo span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+}
+
+.featuresDetailsLeftInfo button {
+  width: 267px;
+  height: 54px;
+  margin-top: 40px;
+  background: #8276ff;
+  border-radius: 31.0938px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* end features styling */
+
+/* start companies styling */
+
+.companiesContainer {
+  margin: 60px 200px;
+}
+
+.companiesContainer .rowContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  gap: 50px;
+}
+
+.firstRow,
+.secondRow {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.companiesContainer h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 31px;
+  line-height: 42px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* end companies styling */
+
+/* start footer styling */
+footer {
+  height: 430px;
+  margin-top: 160px;
+  background: linear-gradient(
+    147.19deg,
+    #362a87 -2.99%,
+    #2c2747 82.25%,
+    #4323f1 157.46%
+  );
+  overflow: hidden;
+}
+
+.footerContainer {
+  padding: 0 0 0 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.footerLeft h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 49px;
+  line-height: 62px;
+  letter-spacing: 0.007em;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.footerLeft button {
+  width: 247px;
+  height: 54px;
+  background: #8276ff;
+  border: none;
+  border-radius: 31.0938px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.footerRight {
+  margin-top: 8px;
+}
+
+/* end footer styling */
